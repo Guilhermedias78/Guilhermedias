@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle com jQuery</title>
+
+    <!-- Importando jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <p id="caixa">
+        Esta caixa vai sumir e aparecer novamente com animação.
+    </p>
+
+    <button id="btn-toggle">Alternar Visibilidade</button>
+
+    <!-- Código jQuery -->
+    <script>
+        $(document).ready(function() {
+            $('#btn-toggle').click(function() {
+                $('#caixa').toggle(500);
+            });
+        });
+    </script>
+
+</body>
+</html>
